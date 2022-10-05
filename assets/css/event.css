@@ -858,6 +858,7 @@ a.comments-readmore {
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 40px;
+    border-radius: 0 70px 0 70px;
   }
   .who-for__icon {
     width: 120px !important;
