@@ -498,22 +498,28 @@ ul.sub-menu-mobile a {
   margin-top: 100px;
   box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.1);
 }
+.carousel-item:nth-child(2) .who-for__box {
+  background-color: #9ed23b;
+}
+.carousel-item:nth-child(3) .who-for__box {
+  background-color: #ff8f00;
+}
 .who-for__icon {
-  width: 150px !important;
+  width: 160px !important;
   margin: 0 auto;
   margin-top: -100px;
   margin-bottom: 30px;
 }
 h3.who-for__title {
   text-align: center;
-  font-size: 27px;
+  font-size: 29px;
   margin-bottom: 20px;
 }
 .who-for_list {
-  font-size: 14px;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 7px;
   text-align: left;
   line-height: 1.6em;
 }
@@ -571,8 +577,8 @@ h3.who-for__title {
 }
 .feature-box__desc {
   text-align: left;
-  font-size: 14px;
-  line-height: 1.8em;
+  font-size: 16px;
+  line-height: 1.7em;
 }
 /* ---features end---- */
 
@@ -611,7 +617,7 @@ h3.who-for__title {
 }
 .member-desc {
   line-height: 1.5em;
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(54, 54, 54);
 }
 /* ---team end---- */
@@ -798,10 +804,7 @@ a.comments-readmore {
     padding-left: 40px;
     padding-right: 40px;
   }
-  .feature-box__desc,
-  .who-for_list {
-    font-size: 15px;
-  }
+
   .feature-box__title {
     font-size: 20px;
   }
@@ -847,6 +850,7 @@ a.comments-readmore {
   .feature-box {
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 40px;
   }
   .who-for__icon,
   .feature-box__icon {
