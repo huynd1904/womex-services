@@ -11,14 +11,10 @@ $(document).ready(function () {
     navText: ["<img src='./img/priv.png'>", "<img src='./img/next.png'>"],
     responsive: {
       0: {
-        items: 1,
-        nav: true,
-      },
-      500: {
         items: 2,
         nav: true,
       },
-      900: {
+      768: {
         items: 3,
       },
       1080: {
