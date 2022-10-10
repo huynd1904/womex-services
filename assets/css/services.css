@@ -77,6 +77,10 @@ section {
   scroll-margin-top: 150px;
   margin-top: 80px;
 }
+img {
+  display: block;
+  max-width: 100%;
+}
 /*  ---variables  start ----- */
 :root {
   --primary: #7669de;
@@ -163,7 +167,18 @@ section {
   color: #f76552;
   box-shadow: -5px 5px 20px #0000007b;
 }
-
+.services-h2 {
+  color: #000;
+  font-size: 33px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.p-20 {
+  padding: 20px;
+}
+.col {
+  overflow: hidden;
+}
 /* logos carousel (newspaper & partner ) */
 .logo-carousel .carousel-item {
   padding: 7px;
@@ -227,7 +242,16 @@ button.owl-dot {
   text-align: center;
   margin-top: 20px;
 }
-
+.bottom-nav .owl-nav {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  margin-top: 50px;
+}
+.bottom-nav .owl-nav button {
+  position: static;
+}
 /*  ---ultilities  end ----- */
 
 /*  ---header section start ----- */
@@ -479,260 +503,127 @@ ul.sub-menu-mobile a {
 .header__content img {
   width: 100%;
 }
+/* ---header end ----  */
 
-/* ---- who for start  */
-
-.who-for-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  text-align: center;
+/* ----tu-van-giao-duc start---- */
+.tu-van-giao-duc .row {
+  align-items: center;
+  margin-bottom: 100px;
 }
-
-.who-for-box {
-  margin: 18px;
-  padding-bottom: 70px;
-  color: #fff;
-  position: relative;
-}
-.who-for-box__bg {
-  background-color: var(--primary);
-  border-radius: 0 110px 0 110px;
-  box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 50px;
-  z-index: -1;
-}
-.carousel-item:nth-child(2) .who-for-box__bg {
-  background-color: #9ed23b;
-}
-.carousel-item:nth-child(3) .who-for-box__bg {
-  background-color: #ff8f00;
-}
-.who-for-box__content {
-  padding: 25px;
-  padding-bottom: 0;
-}
-
-.who-for__icon {
-  width: 160px !important;
-  margin: 0 auto;
-  margin-bottom: 0px;
-}
-h3.who-for__title {
-  text-align: center;
-  font-size: 29px;
+.tu-van-giao-duc h3 {
+  color: rgb(253 96 71);
+  font-size: 33px;
   margin-bottom: 20px;
+  font-weight: 700;
 }
-.who-for_list {
+
+.tu-van-giao-duc p {
+  padding-top: 10px;
+  line-height: 1.7em;
   font-size: 16px;
+  color: rgb(55 26 93);
+}
+.tu-van-giao-duc strong {
+  color: rgb(253 96 71);
+}
+.tu-van-giao-duc img {
+  width: 100%;
+  border-radius: 20px;
+}
+/* ----tu-van-giao-duc end---- */
+
+/* ----cac-van-de start----*/
+
+.cac-van-de-kho-khan .row {
+  align-items: center;
+}
+.cac-van-de-kho-khan img {
+  width: 100%;
+}
+
+.cac-van-de-kho-khan ul {
   display: flex;
   flex-direction: column;
-  gap: 7px;
-  text-align: left;
+  gap: 30px;
+  margin-top: 20px;
+  padding: 7px;
+}
+.cac-van-de-kho-khan li {
+  background-color: rgb(249 245 240);
+  padding: 25px;
+  color: rgb(55 26 93);
+  font-size: 19px;
+  font-weight: 500;
+  border-radius: 30px 30px 30px 0;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
   line-height: 1.6em;
 }
-.who-for_list li {
-  position: relative;
-  margin-left: 20px;
-}
-.who-for_list li::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 7px;
-  left: -20px;
-  height: 11px;
-  width: 11px;
-  background: url(../../img/list-icon.png) no-repeat center;
-  background-size: contain;
-  margin-right: 7px;
-}
-/* ---- who for end  */
+/* ----cac van de end---- */
 
-/* ---features start---- */
-.features {
+/* ----nhiem vu start---- */
+.nhiem-vu h2 {
   text-align: center;
-}
-.features_desc {
-  max-width: 700px;
-  margin: auto;
-  line-height: 1.9em;
-  margin-bottom: 90px;
-  font-size: 16px;
-}
-.features_list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 30px;
-  column-gap: 17px;
-}
-.feature-box {
-  color: #371a5d;
-  position: relative;
-  padding-bottom: 70px;
-}
-.feature-box__bg {
-  background-color: #f9f5f0;
-  border-radius: 0 40% 0 40%;
-  box-shadow: -10px 10px 12px rgba(0, 0, 0, 0.01);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 60px;
-  bottom: 0;
-  z-index: -1;
-}
-.feature-box__icon {
-  width: 140px;
-  margin-bottom: 14px;
-}
-.feature-box__content {
-  padding: 0 30px;
-}
-.feature-box__title {
-  margin-bottom: 10px;
-}
-.feature-box__desc {
-  text-align: left;
-  font-size: 16px;
-  line-height: 1.7em;
-}
-/* ---features end---- */
-
-/* ---team start---- */
-
-.member-box {
-  margin: 15px;
-  overflow: visible;
-}
-
-.member-image {
-  position: relative;
   margin-bottom: 30px;
 }
-.member-image__bg {
-  box-shadow: 10px -10px 12px rgba(0, 0, 0, 0.01);
-  position: absolute;
-  border-radius: 40% 0 40% 0;
-  background-color: #f9f5f0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 85%;
-  z-index: -1;
+.nhiem-vu .row {
+  gap: 0;
+  align-items: flex-end;
 }
-.member-image img {
-  width: 90% !important;
-  margin: auto;
+.nhiem-vu .carousel-item {
+  overflow: visible;
+  padding: 45px 5px 10px 60px;
 }
-.member-name {
-  color: #371a5d;
-  margin-bottom: 8px;
-}
-.member-desc {
+.nhiem-vu-box {
+  background-color: rgb(248 245 244);
+  color: rgb(146 67 246);
+  padding: 120px 80px;
+  font-size: 26px;
   line-height: 1.5em;
-  font-size: 16px;
-  color: rgb(54, 54, 54);
-}
-/* ---team end---- */
-
-/* -----comments start------- */
-.comments .container {
-  width: 1100px;
-}
-.facebook-comment__header {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid rgb(222, 222, 222);
-  margin-bottom: 10px;
-}
-.facebook-comment__header .title {
-  padding-top: 14px;
-}
-.facebook-comment__header .sort {
-  gap: 10px;
-}
-.sort-group svg {
-  width: 120px;
-}
-.facebook-comments__item,
-.comment-reply {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  margin-bottom: 10px;
-}
-
-.facebook-comments__item .content-wrapper {
-  flex: 1;
-}
-.avatar-user {
-  width: 90px;
-  height: 90px;
-}
-.feeback-star {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  color: #bf1e2e;
-}
-.feeback-star img {
-  width: 60px;
-}
-.shop-name {
-  color: #bf1e2e;
-}
-.days-user {
-  color: #6d6e70;
-}
-.avatar-shop {
-  width: 70px;
-  height: 70px;
-}
-.comment-actions {
-  display: flex;
-  align-items: center;
-  color: rgb(67, 102, 176);
-  margin-bottom: 20px;
-}
-.shadow-1-strong {
-  margin-left: 3px;
-}
-.facebook-comments__item .username {
-  color: #1658b9;
-  margin-bottom: 6px;
   font-weight: 500;
+  border-radius: 110px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
+  position: relative;
 }
-.facebook-comments__item .shop-name {
-  margin-bottom: 6px;
+.nhiem-vu img {
+  width: 100%;
 }
-.facebook-comments__item .content-details,
-.facebook-comments__item .reply-details {
-  margin-bottom: 10px;
-}
-a.comments-readmore {
-  color: var(--primary);
-  text-decoration: underline;
+.nhiem-vu-box:after {
+  content: "";
   display: block;
-  text-align: center;
-}
-/* -----comments start------- */
+  position: absolute;
+  top: 35%;
+  left: -50px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 25px 50px 25px 0;
 
-/* -----partners start------- */
+  border-color: transparent rgb(248 245 244) transparent transparent;
+  -webkit-filter: drop-shadow(-10px 1px 5px rgba(0, 0, 0, 0.05));
+  filter: drop-shadow(-10px 1px 5px rgba(0, 0, 0, 0.05));
+}
+/* ----nhiem vu end---- */
 
-.partners {
-  background-image: url(../../img/partners-bg-01.svg);
-  background-position: center top;
-  background-repeat: repeat-y;
-  padding-bottom: 100px;
+/* ---- phuong-thuc-ket-noi start ----  */
+.phuong-thuc-ket-noi {
+  margin-bottom: 50px;
 }
-.partners h2 {
-  margin-bottom: 35px;
+.phuong-thuc-ket-noi h2 {
+  margin-bottom: 30px;
 }
-/* -----partners end------- */
+.phuong-thuc-ket-noi p {
+  line-height: 1.9em;
+  color: rgb(55 25 93);
+}
+.phuong-thuc-ket-noi .grid {
+  display: grid;
+  grid-template-columns: 3fr 5fr 2fr;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 30px;
+}
+
+/* ---- phuong-thuc-ket-noi end ----  */
 
 /* footer  */
 .footer {
@@ -795,6 +686,9 @@ a.comments-readmore {
   .container {
     padding: 10px 20px;
   }
+  .row {
+    grid-template-columns: 1fr;
+  }
   .header__content {
     padding-top: 78px;
   }
@@ -807,19 +701,51 @@ a.comments-readmore {
   .navbar .tel-btn {
     display: none;
   }
-  .header__content .row {
-    grid-template-columns: 1fr 1fr;
-  }
 
-  h3.who-for__title {
-    font-size: 23px;
+  .row-reverse-tb .col:first-child {
+    grid-row: 2/3;
   }
-  .feature-box__content {
-    max-width: 392px;
-    margin: auto;
+  .services-h2,
+  .tu-van-giao-duc h3 {
+    font-size: 28px;
   }
-  .feature-box__title {
-    font-size: 20px;
+  .tu-van-giao-duc .p-20 {
+    padding: 0;
+  }
+  .row,
+  .nhiem-vu .row {
+    gap: 40px;
+  }
+  .nhiem-vu .carousel-item {
+    padding: 10px;
+  }
+  .nhiem-vu-box:after {
+    display: none;
+  }
+  .nhiem-vu-box {
+    padding: 30px 40px;
+    font-size: 19px;
+  }
+  .bottom-nav .owl-nav {
+    margin-top: 30px;
+    justify-content: center;
+  }
+  .phuong-thuc-ket-noi .grid {
+    grid-template-columns: 2fr 3fr;
+  }
+  .phuong-thuc-ket-noi .col {
+    padding: 10px 20px;
+  }
+  .phuong-thuc-ket-noi .col:nth-child(4),
+  .phuong-thuc-ket-noi .col:nth-child(3) {
+    display: none;
+  }
+  .phuong-thuc-ket-noi .col:nth-child(6) {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .phuong-thuc-ket-noi .col:nth-child(5) {
+    grid-row: 2/3;
   }
 }
 @media (max-width: 768px) {
@@ -846,52 +772,6 @@ a.comments-readmore {
   .navbar img {
     width: 130px;
   }
-  .feature-box__desc {
-    text-align: center;
-  }
-  .features_list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .feature-box__icon {
-    width: 100px !important;
-  }
-  .who-for h2 {
-    margin-bottom: 0;
-  }
-  .who-for-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .who-for-box__bg {
-  }
-  .who-for__icon {
-    width: 120px !important;
-  }
-  .features_desc {
-    margin-bottom: 50px;
-  }
-  .feature-box {
-    padding-bottom: 40px;
-  }
-  .feature-box__bg {
-    border-radius: 0 15vw 0 15vw;
-    top: 40px;
-  }
-  .member-box {
-    text-align: center;
-  }
-
-  .facebook-comments__item {
-    font-size: 13px;
-  }
-  .sort-by {
-    display: none;
-  }
-
-  .header__content .row {
-    grid-template-columns: 1fr;
-  }
 
   .mb-menu-wrapper {
     display: block;
@@ -900,8 +780,16 @@ a.comments-readmore {
     color: rgb(40, 40, 40);
     font-size: 18px;
   }
-  .partners {
-    padding-bottom: 50px;
+  .phuong-thuc-ket-noi .grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .phuong-thuc-ket-noi .col:nth-child(6) {
+    grid-row: 3/4;
+    grid-column: unset;
+  }
+  .phuong-thuc-ket-noi .col:nth-child(5) {
+    grid-row: unset;
   }
   .footer .row {
     grid-template-columns: repeat(2, 1fr);
@@ -915,13 +803,6 @@ a.comments-readmore {
   }
 }
 
-@media (max-width: 530px) {
-  .feature-box__content {
-    padding: 0 15px;
-  }
-}
-@media (max-width: 400px) {
-}
 @media (min-width: 1800px) {
   body {
     max-width: 1800px;

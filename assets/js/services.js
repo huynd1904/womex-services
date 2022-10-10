@@ -2,54 +2,40 @@ $(document).ready(function () {
   // who-for carousel
 
   // team carousel
-  $(".team-carousel").owlCarousel({
+  $(".kho-khan-carousel").owlCarousel({
     loop: true,
-    margin: 0,
-    responsiveClass: true,
-    dots: true,
-    nav: false,
-    navText: ["<img src='./img/priv.png'>", "<img src='./img/next.png'>"],
-    responsive: {
-      0: {
-        items: 2,
-        nav: true,
-      },
-      768: {
-        items: 3,
-      },
-      1080: {
-        items: 4,
-
-        loop: true,
-      },
-    },
+    margin: 10,
+    dots: false,
+    nav: true,
+    navText: ["<img src='./img/priv.svg'>", "<img src='./img/next.svg'>"],
+    items: 1,
   });
 
   // partner-carousel
-  $(".logo-carousel").owlCarousel({
-    loop: true,
-    margin: 0,
-    responsiveClass: true,
-    nav: true,
-    dots: false,
-    navText: ["<img src='./img/priv.png'>", "<img src='./img/next.png'>"],
-    responsive: {
-      0: {
-        items: 2,
-      },
-      500: {
-        items: 3,
-      },
-      800: {
-        items: 4,
-      },
-      1000: {
-        items: 6,
+  // $(".logo-carousel").owlCarousel({
+  //   loop: true,
+  //   margin: 0,
+  //   responsiveClass: true,
+  //   nav: true,
+  //   dots: false,
+  //   navText: ["<img src='./img/priv.png'>", "<img src='./img/next.png'>"],
+  //   responsive: {
+  //     0: {
+  //       items: 2,
+  //     },
+  //     500: {
+  //       items: 3,
+  //     },
+  //     800: {
+  //       items: 4,
+  //     },
+  //     1000: {
+  //       items: 6,
 
-        loop: true,
-      },
-    },
-  });
+  //       loop: true,
+  //     },
+  //   },
+  // });
 });
 
 const nav = document.querySelector(".navbar");
